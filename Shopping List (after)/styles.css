@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body, .toDoHeader, .toDoNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #CED4E0;
+}
+
+.toDoContainer {
+    width: 500px;
+    background-color: #F0EEF3;
+    border-radius: 20px;
+    -webkit-box-shadow: 6px 7px 5px 2px rgba(94, 94, 94, 0.72);
+    -moz-box-shadow: 6px 7px 5px 2px rgba(94, 94, 94, 0.72);
+    box-shadow: 6px 7px 5px 2px rgba(94, 94, 94, 0.72);
+}
+
+.toDoHeader {
+    height: 70px;
+    background-color: #1E4174; 
+    border-radius: 20px 20px 0px 0px;
+    font-size: 30px;
+    color: #DDA94B;
+    font-weight: bold;
+}
+
+.toDoMain {
+    color: #DDA94B;
+    height: 520px;
+    overflow: auto;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: none;
+    font-size: 25px;
+    padding: 5px 20px;
+}
+
+input:focus, button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.toDoNav {
+    height: 70px;
+    background-color: #1E4174; 
+    border-radius: 0px 0px 20px 20px;
+    font-size: 30px;
+    color: #DDA94B;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #DDA94B;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 150ms ease-in;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.delBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+}
+
+.delBtn:hover {
+    color: #990011;
+}
+
+ul {
+    padding: 0 30px;
+}
+
+li {
+    color: black;
+    list-style-type: none;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 25px;
+}
+
+.liDivider {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto;
+}
