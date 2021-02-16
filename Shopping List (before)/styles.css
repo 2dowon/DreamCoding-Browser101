@@ -66,6 +66,11 @@ button {
     color: #DDA94B;
     font-size: 50px;
     cursor: pointer;
+    transition: transform 150ms ease-in;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 li, #delBtn {
@@ -85,10 +90,8 @@ li {
     font-size: 20px;
     color: black;
     margin-right: 20px;
-    transition: transform 150ms ease-in;
 }
 
 #delBtn:hover {
-    transform: scale(1.1);
     color: #990011;
 }
