@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.game {
+    width: 800px;
+    height: 500px;
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+	background-size : cover;
+    background-position: center center;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 2%;
+}
+
+.game_info {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game_btn, .game_timer {
+    border-radius: 10px;
+    border: 4px solid black;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.game_btn {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #F2D9AE;
+}
+
+.game_btn i {
+    padding: 10px;
+}
+
+.game_timer {
+    width: 130px;
+    height: 50px;
+    background-color: white;
+    font-size: 25px;
+    padding-top: 7px;
+}
+
+.carrot_count {
+    width: 55px;
+    height: 55px;
+    background-color: #EE9379;
+    color: white;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.game_item {
+    position: relative;
+}
+
+.carrot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.bug {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.game_alert {
+    position: absolute;
+    top: 400px;
+    left: 520px;
+    width: 400px;
+    height: 130px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.restart {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #F2DAAB;
+    font-size: 25px;
+    border-radius: 15px;
+    border: 3px solid black;
+    margin: auto;
+    margin-top: 7px;
+}
+
+.game_alert span {
+    display: block;
+    color:white;
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+}
